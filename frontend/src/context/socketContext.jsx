@@ -15,7 +15,7 @@ export const SocketContextProvider = ({ children }) => {
 
 	useEffect(() => {
 		if (authUser) {
-			const socket = io("https://chatapplication-ptkc.onrender.com/login", {
+			const socket = io("https://chatapplication-ptkc.onrender.com", {
 				query: {
 					userId: authUser._id,
 				},
